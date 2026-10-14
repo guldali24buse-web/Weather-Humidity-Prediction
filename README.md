@@ -9,33 +9,34 @@ This project implements a Multiple Linear Regression model to predict humidity l
 
 1. **Data Preprocessing:**
    
-   - Converted categorical variables (outlook, windy, play) into numerical matrices using **One-Hot Encoding**.
-   - Implemented `drop_first=True` to prevent the **Dummy Variable Trap** (Multicollinearity).
+   Converted categorical variables (outlook, windy, play) into numerical matrices using **One-Hot Encoding**.
+   Implemented `drop_first=True` to prevent the **Dummy Variable Trap** (Multicollinearity).
      
 2. **Statistical Feature Selection (Backward Elimination):**
 
-<img width="584" height="238" alt="Ekran Resmi 2026-10-14 10 58 41" src="https://github.com/user-attachments/assets/d9078ab4-5530-44be-87bc-564c7e06d5cd" />
+    <img width="584" height="238" alt="Ekran Resmi 2026-10-14 10 58 41" src="https://github.com/user-attachments/assets/d9078ab4-5530-44be-87bc-564c7e06d5cd" />
 
 
-   - Utilized the **Ordinary Least Squares (OLS)** method via the `statsmodels` library.
-   - Evaluated the p-values ($P>\vert{}t\vert{}$) of independent variables.
-   - Eliminated statistically insignificant variables (p-value > 0.05) such as `outlook_sunny` and `temperature` to optimize the model.
+   Utilized the **Ordinary Least Squares (OLS)** method via the `statsmodels` library.
+   Evaluated the p-values ($P>\vert{}t\vert{}$) of independent variables.
+   Eliminated statistically insignificant variables (p-value > 0.05) such as `outlook_sunny` and `temperature` to optimize the model.
      
 3. **Model Training & Evaluation:**
 
     <img width="539" height="118" alt="Ekran Resmi 2026-10-14 10 59 31" src="https://github.com/user-attachments/assets/3efb5dc4-0c79-4027-a311-5e9b3753ffa0" />
 
 
-   - Split the dataset into Training (70%), Testing (15%), and Validation (15%) sets.
-   - Trained the optimized model using `scikit-learn`'s `LinearRegression`.
-   - Measured model performance using the **R-Squared ($R^2$)** metric on the test set.
+   Split the dataset into Training (70%), Testing (15%), and Validation (15%) sets.
+   Trained the optimized model using `scikit-learn`'s `LinearRegression`.
+   Measured model performance using the **R-Squared ($R^2$)** metric on the test set.
      
 4. **Final Prediction:**
-   - Simulated a real-world scenario by feeding unseen validation data into the trained model and comparing predicted values with actual humidity levels.
+   
+   Simulated a real-world scenario by feeding unseen validation data into the trained model and comparing predicted values with actual humidity levels.
 
 ## Technologies & Libraries Used
 
-<img width="375" height="90" alt="Ekran Resmi 2026-10-14 10 56 42" src="https://github.com/user-attachments/assets/0ba02566-91e0-4892-8328-53bd05d75185" />
+    <img width="375" height="90" alt="Ekran Resmi 2026-10-14 10 56 42" src="https://github.com/user-attachments/assets/0ba02566-91e0-4892-8328-53bd05d75185" />
 
 
 * **Python 3.x**
