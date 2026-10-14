@@ -36,7 +36,7 @@ This project implements a Multiple Linear Regression model to predict humidity l
 
 ## Technologies & Libraries Used
 
-    <img width="375" height="90" alt="Ekran Resmi 2026-10-14 10 56 42" src="https://github.com/user-attachments/assets/0ba02566-91e0-4892-8328-53bd05d75185" />
+    <img width="429" height="87" alt="Ekran Resmi 2026-10-14 11 04 25" src="https://github.com/user-attachments/assets/d63a8b6e-dfe0-493e-8ed4-0da13705abec" />
 
 
 * **Python 3.x**
